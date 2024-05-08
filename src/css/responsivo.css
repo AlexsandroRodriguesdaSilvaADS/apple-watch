@@ -1,0 +1,246 @@
+@media (max-width: 1230px) {
+    nav {
+        display: none;
+    }
+
+    .one,
+    .two,
+    .three {
+        background-color: #ff0000;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: 0.3s;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+        margin: auto;
+        margin-top: 25px;
+        margin-right: 25px;
+    }
+
+    .menu-section.on {
+        background: url(../imagens/bg-toogle.png) no-repeat;
+        background-color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100%;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-section.on nav {
+        display: block;
+    }
+
+    .menu-section.on .menu-toggle {
+        position: absolute;
+        right: 1px;
+        top: 1px;
+    }
+
+    .menu-section.on .menu-toggle .one {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu-section.on .menu-toggle .two {
+        opacity: 0;
+    }
+
+    .menu-section.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    .menu-section.on nav ul {
+        text-align: center;
+        align-items: center;
+        padding-top: 50px;
+        display: block;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .menu-section.on nav a {
+        font-size: 24px;
+        line-height: 50px;
+        display: block;
+        transition-duration: 0.5s;
+    }
+
+    .menu-section.on li a:hover {
+        text-decoration: none;
+        border-bottom: 2px solid #ffffff;
+    }
+
+    .menu-section.on li {
+        margin: auto;
+        width: 170px;
+        height: 7vh;
+    }
+
+    #produto {
+        max-width: 90vw;
+    }
+}
+
+@media (max-width: 882px) {
+    div#visualizacao {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 800px) {
+    #imagem-visualizacao {
+        transform: scale(0.9);
+    }
+}
+
+@media (max-width: 767px) {
+    #opcoes ul {
+        transform: scale(0.9);
+        padding: 0;
+    }
+}
+
+@media (max-width: 746px) {
+    #produto {
+        max-width: 100vw;
+    }
+}
+
+@media (max-width: 707px) {
+    #imagem-visualizacao {
+        transform: scale(0.8);
+    }
+
+    #opcoes-produto {
+        max-width: 30vw;
+        padding: 15px;
+        margin: 0 25px 0 0;
+    }
+}
+
+@media (max-width: 691px) {
+    #opcoes ul {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 657px) {
+    #opcoes ul {
+        transform: scale(0.7);
+    }
+}
+
+@media (max-width: 650px) {
+    #imagem-visualizacao {
+        position: absolute;
+        z-index: -1;
+        left: 30vw;
+    }
+
+    div#visualizacao {
+        width: 0;
+    }
+
+    ul.selecionar-imagem {
+        position: absolute;
+        z-index: 1;
+        top: 70vh;
+        left: 50vw;
+    }
+
+    #opcoes-produto {
+        max-width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+
+    #opcoes li {
+        margin: 0;
+    }
+
+    .selecao-cores {
+        width: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    #opcoes ul {
+        width: 60px;
+        height: 35vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        border: 1px solid #ffffff;
+    }
+
+    ul.selecionar-imagem {
+        top: 65vh;
+    }
+}
+
+@media (max-width: 514px) {
+    #imagem-visualizacao {
+        left: 25vw;
+        opacity: 0.75;
+    }
+
+    .precos {
+        width: 30vw;
+    }
+}
+
+@media (max-width: 480px) {
+    #imagem-visualizacao {
+        left: 20vw;
+    }
+}
+
+@media (max-width: 450px) {
+    #imagem-visualizacao {
+        left: 15vw;
+    }
+}
+
+@media (max-width: 422px) {
+    #imagem-visualizacao {
+        left: 10vw;
+    }
+}
+
+@media (max-width: 400px) {
+    #imagem-visualizacao {
+        left: 5vw;
+    }
+
+    ul.selecionar-imagem {
+        left: 40vw;
+    }
+}
+
+@media (max-width: 378px) {
+    #imagem-visualizacao {
+        left: 0;
+    }
+}
+
+@media (max-width: 360px) {
+    #imagem-visualizacao {
+        width: 110vw;
+    }
+}
+
+@media (max-width: 330px) {
+    ul.selecionar-imagem {
+        left: 30vw;
+    }
+}
